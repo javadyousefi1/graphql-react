@@ -1,10 +1,7 @@
-import { useQuery } from "@apollo/client";
-import { GET_CHARACTERS } from "./graphql/query";
+import Home from "./pages/home/Home";
 
 const App = () => {
-  const { loading, error, data } = useQuery(GET_CHARACTERS);
-  console.log(data)
-  return (<div>hi</div>);
+  return <Home />;
 }
 
 export default App;
